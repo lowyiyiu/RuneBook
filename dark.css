@@ -1,210 +1,210 @@
 body {
-	background: #191D24;
+  background: #191d24;
 }
 
 .ui.secondary.pointing.menu {
-	background: #121212;
-	border-bottom: 1px solid #BD9D5E;
+  background: #121212;
+  border-bottom: 1px solid #bd9d5e;
 }
 
 .ui.secondary.pointing.menu .header.item {
-	color: #BD9D5E !important;
+  color: #bd9d5e !important;
 }
 
 #autochamp-label span {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 #autochamp-label::before {
-	background: #121212 !important;
-	border: 2px solid #BD9D5E;
+  background: #121212 !important;
+  border: 2px solid #bd9d5e;
 }
 
 .ui.toggle.checkbox.checked #autochamp-label::before {
-	background: #191D24 !important;
-	border: 2px solid #00ACB1;
+  background: #191d24 !important;
+  border: 2px solid #00acb1;
 }
 
 #autochamp-label::after {
-	background: #d8cfbd !important;
+  background: #d8cfbd !important;
 }
 
 div.ui.icon.input input {
-	background: #121212;
-	color: #d8cfbd;
+  background: #121212;
+  color: #d8cfbd;
 }
 
 input::selection {
-	background: #00ACB1;
-	color: #d8cfbd;
+  background: #00acb1;
+  color: #d8cfbd;
 }
 
 .ui.search.fluid.champion .prompt {
-	border: 2px solid #BD9D5E;
+  border: 2px solid #bd9d5e;
 }
 
 .ui.search.fluid.champion.focus .prompt {
-	border: 2px solid #00ACB1;
+  border: 2px solid #00acb1;
 }
 
 .search.icon {
-	color: #d8cfbd !important;
+  color: #d8cfbd !important;
 }
 
 .results {
-	border: 1px solid #BD9D5E !important;
+  border: 1px solid #bd9d5e !important;
 }
 
 .results .result {
-	background: #121212;
+  background: #121212;
 }
 
 .results .result.active {
-	background: #191D24 !important;
+  background: #191d24 !important;
 }
 
 .results .result:hover {
-	background: #191D24 !important;
+  background: #191d24 !important;
 }
 
 .ui.search > .results .result .title {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 .ui.search > .results .result.active .title {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 runebook .ui.horizontal.divider {
-	color: #BD9D5E;
+  color: #bd9d5e;
 }
 
 .ui.top.attached.pointing.small.borderless.menu {
-	background: #191D24;
-	border-color: #BD9D5E;
+  background: #191d24;
+  border-color: #bd9d5e;
 }
 
 .ui.top.attached.pointing.small.borderless.menu .item {
-	color: #BD9D5E;
+  color: #bd9d5e;
 }
 
 .ui.top.attached.pointing.small.borderless.menu .item.active {
-	background: #121212;
-	box-shadow: inset 1px 0px 0px 0px #BD9D5E, inset -1px 0px 0px 0px #BD9D5E;
-	color: #d8cfbd;
+  background: #121212;
+  box-shadow: inset 1px 0px 0px 0px #bd9d5e, inset -1px 0px 0px 0px #bd9d5e;
+  color: #d8cfbd;
 }
 
 .ui.top.attached.pointing.small.borderless.menu .item.active::after {
-	background: #191D24 !important;
-	border-bottom: 2px solid #BD9D5E !important;
-	border-right: 2px solid #BD9D5E !important;
+  background: #191d24 !important;
+  border-bottom: 2px solid #bd9d5e !important;
+  border-right: 2px solid #bd9d5e !important;
 }
 
 .ui.bottom.attached.tab.segment {
-	background: #191D24;
-	border-color: #BD9D5E;
+  background: #191d24;
+  border-color: #bd9d5e;
 }
 
 chapters-segment .ui.active.inverted.dimmer {
-	background: #191D24;
+  background: #191d24;
 }
 
 page-list ::-webkit-scrollbar-thumb {
-    background: #71552B;
+  background: #71552b;
 }
 
 page-list ::-webkit-scrollbar-thumb:window-inactive {
-    background: #71552B;
+  background: #71552b;
 }
 
 page-list ::-webkit-scrollbar-thumb:hover {
-    background: #BD9D5E;
+  background: #bd9d5e;
 }
 
-.ui.divided.list>.item {
-	border-top: 1px solid #BD9D5E;
-	color: #d8cfbd !important;
+.ui.divided.list > .item {
+  border-top: 1px solid #bd9d5e;
+  color: #d8cfbd !important;
 }
 
 .row .header .icon {
-	color: #00ACB1;
+  color: #00acb1;
 }
 
 .row .header .content {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 .row .header .content .sub.header {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 .ui.segment {
-	background: #191D24;
-	border: 1px solid #BD9D5E;
+  background: #191d24;
+  border: 1px solid #bd9d5e;
 }
 
 .ui.segment .header {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 .middle.aligned.content .ui.header {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 .ui.segment .header .sub.header {
-	color: #d8cfbd;
+  color: #d8cfbd;
 }
 
 current-page .ui.button {
-	background: #71552B;
+  background: #71552b;
 }
 
 page-list .ui.button {
-	background: #71552B;
+  background: #71552b;
 }
 
 current-page .ui.button:hover {
-	background: #BD9D5E;
+  background: #bd9d5e;
 }
 
 page-list .ui.button:hover {
-	background: #BD9D5E;
+  background: #bd9d5e;
 }
 
 current-page .ui.button:focus {
-	background: #71552B;
+  background: #71552b;
 }
 
 page-list .ui.button:focus {
-	background: #71552B;
+  background: #71552b;
 }
 
 current-page .ui.button:active {
-	background: #BD9D5E;
+  background: #bd9d5e;
 }
 
 page-list .ui.button:active {
-	background: #BD9D5E;
+  background: #bd9d5e;
 }
 
 .ui.popup {
-	background: #121212;
-	color: #d8cfbd;
-	border: 1px solid #71552B;
+  background: #121212;
+  color: #d8cfbd;
+  border: 1px solid #71552b;
 }
 
 .ui.popup::before {
-	background: #121212 !important;
-	border-bottom: 1px solid #71552B !important;
-	border-right: 1px solid #71552B !important;
-	box-shadow: none !important;
+  background: #121212 !important;
+  border-bottom: 1px solid #71552b !important;
+  border-right: 1px solid #71552b !important;
+  box-shadow: none !important;
 }
 
 .ui.popup.bottom::before {
-	background: #121212 !important;
-	border-left: 1px solid #71552B !important;
-	border-bottom: none !important;
-	border-right: none !important;
-	border-top: 1px solid #71552B !important;
-	box-shadow: none !important;
+  background: #121212 !important;
+  border-left: 1px solid #71552b !important;
+  border-bottom: none !important;
+  border-right: none !important;
+  border-top: 1px solid #71552b !important;
+  box-shadow: none !important;
 }
