@@ -4,12 +4,12 @@ This project is forked and only contains several bug fixes since the last offici
 
 # Download
 
-[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.1/RuneBook.exe)
+[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.1/RuneBook-2.0.1.exe)
 
 | Algorithm | Checksums                                                        |
 | --------- | ---------------------------------------------------------------- |
-| MD5       | fda9942056fd2c4c1d6d3ce17b87be01                                 |
-| SHA256    | 49e59b06465216d79a0a78bf2978ffc6b9c2b441d926b46cb46bf941570cef02 |
+| MD5       | 81ced3e16be654593ee0adc55a13c7d2                                 |
+| SHA256    | 7b6c116b26742f6704534e3fc53ea2a7aa463f1848edb669b9ecdcf1f561e5ea |
 
 # Features
 
