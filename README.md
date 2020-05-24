@@ -3,22 +3,28 @@
 This project is forked and only contains several bug fixes since the last official release from the [original project](https://github.com/OrangeNote/RuneBook).
 
 # Download
-[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.1/RuneBook.exe)
+
+[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.2/RuneBook.exe)
+| MD5 | ef41bf22a4eeac3f2cfb39e0591d10c0 |
+|--------|------------------------------------------------------------------|
+| SHA256 | 7e16dbed42dbac8a34294d5fae9a6639b9b7cbc1239f82a38ad4b2fcb1c66d1e |
 
 # Features
+
 - Local database for rune pages, organized by champion
 - One-click import and export for pages, to/from the League Client
 - Import pages from external sites, like champion.gg, Korean Builds and more
 - Bookmark online pages in the local section for a quicker access
 - Option that enables automatic champion chooser, based on your pick in champion select
 - A nice and clean user interface
-- One-click installation and automatic updates
 - (technical) if JavaScript is your thing, know that RuneBook allows you to write modular plugins in order to extract rune pages from new external sources (documentation soon, see [existing plugins](https://github.com/lowyiyiu/RuneBook/tree/master/plugins) for reference)
 
 # Changelog
 
 - Update source to fetch ddragon API version
 - Added a new page from OP.GG for URF
+- Update U.GG
+- Removed KoreanBuilds
 
 # Acknowledgements
 
