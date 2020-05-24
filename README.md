@@ -8,8 +8,8 @@ This project is forked and only contains several bug fixes since the last offici
 
 | Algorithm | Checksums                                                        |
 | --------- | ---------------------------------------------------------------- |
-| MD5       | ef41bf22a4eeac3f2cfb39e0591d10c0                                 |
-| SHA256    | 7e16dbed42dbac8a34294d5fae9a6639b9b7cbc1239f82a38ad4b2fcb1c66d1e |
+| MD5       | fda9942056fd2c4c1d6d3ce17b87be01                                 |
+| SHA256    | 49e59b06465216d79a0a78bf2978ffc6b9c2b441d926b46cb46bf941570cef02 |
 
 # Features
 

@@ -8,7 +8,14 @@
     <div class="scrolling content">
       <img class="ui fluid rounded image" src="./img/backdrop.png">
       <h3>Greetings, Summoner!</h3>
-      <p>Updated version extract to match with Riot's latest versioning</p>
+      <p>
+        <ul>
+        <li>Update source to fetch ddragon API version</li>
+        <li>Added a new page from OP.GG for URF</li>
+        <li>Update U.GG</li>
+        <li>Removed KoreanBuilds</li>
+        </ul>
+      </p>
     </div>
   </div>
 
