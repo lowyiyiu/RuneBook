@@ -4,7 +4,7 @@ This project is forked and only contains several bug fixes since the last offici
 
 # Download
 
-[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.2/RuneBook.exe)
+[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.1/RuneBook.exe)
 
 | Algorithm | Checksums                                                        |
 | --------- | ---------------------------------------------------------------- |
