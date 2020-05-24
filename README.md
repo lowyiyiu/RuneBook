@@ -9,7 +9,6 @@ This project is forked and only contains several bug fixes since the last offici
 | Algorithm | Checksums                                                        |
 | --------- | ---------------------------------------------------------------- |
 | MD5       | ef41bf22a4eeac3f2cfb39e0591d10c0                                 |
-| ------    | ---------------------------------------------------------------- |
 | SHA256    | 7e16dbed42dbac8a34294d5fae9a6639b9b7cbc1239f82a38ad4b2fcb1c66d1e |
 
 # Features
