@@ -1,5 +1,5 @@
-const { map } = require('lodash');
-const { getJson, sortRunes } = require('./utils');
+const { map } = require("lodash");
+const { getJson, sortRunes } = require("./utils");
 
 // U.GG API consts
 // data[servers][tiers][positions][0][stats][perks/shards]
@@ -9,14 +9,14 @@ const u = {
     support: 2,
     adc: 3,
     top: 4,
-    mid: 5
+    mid: 5,
   },
   positionsReversed: {
-    1: 'Jungle',
-    2: 'Support',
-    3: 'ADC',
-    4: 'Top',
-    5: 'Mid'
+    1: "Jungle",
+    2: "Support",
+    3: "ADC",
+    4: "Top",
+    5: "Mid",
   },
   tiers: {
     challenger: 1,
@@ -28,7 +28,7 @@ const u = {
     bronze: 7,
     overall: 8,
     platPlus: 10,
-    diaPlus: 11
+    diaPlus: 11,
   },
   servers: {
     na: 1,
@@ -42,53 +42,47 @@ const u = {
     ru: 9,
     tr: 10,
     jp: 11,
-    world: 12
+    world: 12,
   },
   stats: {
     perks: 0,
-    statShards: 8
+    statShards: 8,
   },
   perks: {
     games: 0,
     won: 1,
     mainPerk: 2,
     subPerk: 3,
-    perks: 4
+    perks: 4,
   },
   shards: {
     games: 0,
     won: 1,
-    stats: 2
-  }
+    stats: 2,
+  },
 };
 
 // KEY CONSTS - UPDATE THESE ACCORDING TO GUIDE https://gist.github.com/paolostyle/fe8ce06313d3e53c134a24762b9e519c
-const uGGDataVersion = '1.2';
-const uGGAPIVersion = '1.1';
+const uGGDataVersion = "1.2";
+const uGGAPIVersion = "1.1";
 
-const riotVersionEndpoint = 'https://ddragon.leagueoflegends.com/api/versions.json';
-const uGGDataVersionsEndpoint = 'https://u.gg/json/new_ugg_versions/' + uGGDataVersion + '.json';
+const riotVersionEndpoint = "https://ddragon.leagueoflegends.com/api/versions.json";
+const uGGDataVersionsEndpoint = "https://u.gg/json/new_ugg_versions/" + uGGDataVersion + ".json";
 
 const server = u.servers.world;
 const tier = u.tiers.platPlus;
 
-const getUGGFormattedLolVersion = lolVer =>
-  lolVer
-    .split('.')
-    .splice(0, 2)
-    .join('_');
+const getUGGFormattedLolVersion = (lolVer) => lolVer.split(".").splice(0, 2).join("_");
 
 function extractPage(champion) {
   return (item, key) => {
     const perksData = item[0][u.stats.perks];
-    const statShards = item[0][u.stats.statShards][u.shards.stats].map(str => parseInt(str, 10));
+    const statShards = item[0][u.stats.statShards][u.shards.stats].map((str) => parseInt(str, 10));
 
     const primaryStyleId = perksData[u.perks.mainPerk];
     const subStyleId = perksData[u.perks.subPerk];
 
-    const selectedPerkIds = sortRunes(perksData[u.perks.perks], primaryStyleId, subStyleId).concat(
-      statShards
-    );
+    const selectedPerkIds = sortRunes(perksData[u.perks.perks], primaryStyleId, subStyleId).concat(statShards);
 
     return {
       name: `${champion} ${u.positionsReversed[key]}`,
@@ -97,16 +91,16 @@ function extractPage(champion) {
       selectedPerkIds,
       games: perksData[u.perks.games],
       bookmark: {
-        src: '',
+        src: "",
         meta: {
           pageType: key,
-          champion
+          champion,
         },
         remote: {
-          name: 'U.GG',
-          id: 'ugg'
-        }
-      }
+          name: "U.GG",
+          id: "ugg",
+        },
+      },
     };
   };
 }
@@ -118,11 +112,11 @@ async function getDataSource(champion) {
     let lolVersion = lolVersions[0];
     let lolVersionUGG = getUGGFormattedLolVersion(lolVersion);
 
-    const overviewVersion = "1.2.6";
-    
-    const championDataUrl = `https://static.u.gg/assets/lol/riot_static/${lolVersion}/data/en_US/champion/${champion}.json`;
+    const overviewVersion = "1.4.0";
 
+    const championDataUrl = `https://static.u.gg/assets/lol/riot_static/${lolVersion}/data/en_US/champion/${champion}.json`;
     const championData = await getJson(championDataUrl);
+
     const championId = championData.data[champion].key;
 
     const championStatsUrl = `https://stats2.u.gg/lol/${uGGAPIVersion}/overview/${lolVersionUGG}/ranked_solo_5x5/${championId}/${overviewVersion}.json`;
@@ -154,13 +148,13 @@ async function _getPages(champion, callback) {
     let pages = map(championStats[server][tier], extractPage(champion));
     let totalGames = pages.reduce((total, current) => (total += current.games), 0);
 
-    pages = pages.filter(page => {
+    pages = pages.filter((page) => {
       const positionPercentage = page.games / totalGames;
       delete page.games;
       return positionPercentage > 0.1;
     });
 
-    pages.forEach(page => {
+    pages.forEach((page) => {
       runePages.pages[page.name] = page;
     });
 
@@ -172,8 +166,8 @@ async function _getPages(champion, callback) {
 }
 
 const plugin = {
-  id: 'ugg',
-  name: 'U.GG',
+  id: "ugg",
+  name: "U.GG",
   active: true,
   bookmarks: true,
   getPages(champion, callback) {
@@ -181,7 +175,7 @@ const plugin = {
   },
   syncBookmark(bookmark, callback) {
     updateBookmark(bookmark.meta.champion, bookmark.meta.pageType, callback);
-  }
+  },
 };
 
 module.exports = { plugin };
