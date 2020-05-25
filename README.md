@@ -4,12 +4,12 @@ This project is forked and only contains several bug fixes since the last offici
 
 # Download
 
-[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.1/RuneBook-2.0.1.exe)
+[Windows](https://github.com/lowyiyiu/RuneBook/releases/download/v2.0.2/RuneBook-2.0.2.exe)
 
 | Algorithm | Checksums                                                        |
 | --------- | ---------------------------------------------------------------- |
-| MD5       | 81ced3e16be654593ee0adc55a13c7d2                                 |
-| SHA256    | 7b6c116b26742f6704534e3fc53ea2a7aa463f1848edb669b9ecdcf1f561e5ea |
+| MD5       | 5e0e274368361876390b38061ea01abc                                 |
+| SHA256    | a376c658a8582e43e4f38aee59a1df97195559bfe4f4c3c3ff371797db645919 |
 
 # Features
 
@@ -22,7 +22,10 @@ This project is forked and only contains several bug fixes since the last offici
 - (technical) if JavaScript is your thing, know that RuneBook allows you to write modular plugins in order to extract rune pages from new external sources (documentation soon, see [existing plugins](https://github.com/lowyiyiu/RuneBook/tree/master/plugins) for reference)
 
 # Changelog
+## 2.0.2
+- Added KoreanBuilds (Unable to sync if bookmarked)
 
+## 2.0.1
 - Update source to fetch ddragon API version
 - Added a new page from OP.GG for URF
 - Update U.GG
