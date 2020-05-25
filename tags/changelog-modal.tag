@@ -10,10 +10,7 @@
       <h3>Greetings, Summoner!</h3>
       <p>
         <ul>
-        <li>Update source to fetch ddragon API version</li>
-        <li>Added a new page from OP.GG for URF</li>
-        <li>Update U.GG</li>
-        <li>Removed KoreanBuilds</li>
+        <li>Added KoreanBuilds (Unable to sync if bookmarked)</li>
         </ul>
       </p>
     </div>
